@@ -82,10 +82,13 @@ let doublednumbers = [];
 
 // forEach
 
-numbers_2.forEach((number) => {
-     number * 2;
-    doublednumbers.push(number * 2);
-})
+// numbers_2.forEach((number) => {
+//      number * 2;
+//     doublednumbers.push(number * 2);
+// })
+
+numbers_2.forEach(number => doublednumbers.push(number * 2));
+
 
 console.log(doublednumbers);
 
