@@ -78,3 +78,25 @@ numbers1.forEach((number1, i )=> console.log(`The number ${number1} is at index 
 // The number 4 is at index 1
 // The number 6 is at index 2
 // The number 8 is at index 3
+
+
+// 
+
+const evenNumbers = [2, 4, 6, 8, 10];
+
+for (let i = 0; i < evenNumbers.length; i++) {
+     evenNumbers[i] = evenNumbers[i] * 2;
+}
+
+console.log(evenNumbers);
+
+
+// forEach
+
+evenNumbers.forEach((number) => {
+    return number * 2;
+})
+
+console.log(evenNumbers);
+
+
