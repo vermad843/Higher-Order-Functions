@@ -105,3 +105,17 @@ animalNames = animals.map((animal) => {
 
 console.log(animalNames);
 // [ 'cat', 'dog', 'lion', 'elephant' ]
+
+
+const theNumbers = [4, 8, 15, 16, 23, 42];
+//create a new array of objects with the properties
+// value and index
+
+const valueAndIndex = theNumbers.map(( value,index) => {
+    return {
+        value,
+        index
+    }
+});
+
+console.log(valueAndIndex);
