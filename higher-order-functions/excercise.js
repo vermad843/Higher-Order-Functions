@@ -130,9 +130,14 @@ let products = [{
 }];
 
 
-products.forEach((product) => {
-    console.log(`${product.name}`);
-})
+// products.forEach((product) => {
+//     console.log(`${product.name}`);
+// })
+
+// one liner 
+
+products.forEach(product =>   console.log(`${product.name}`));
+
 
 
 // Running shoes
