@@ -45,12 +45,30 @@ greetings
 */
 // getName is a function you mentioned above:
 
-function greet(getNameFn,greeting) {
-  console.log(greeting,getNameFn());
-}
+// function greet(getNameFn,greeting) {
+//   console.log(greeting,getNameFn());
+// }
 
-greet(getName,'Hello');
-//hello vishnu 
+// greet(getName,'Hello');
+// //hello vishnu 
+
+
+// const greet = (getNameFn, greeting) => {
+//     console.log(`${greeting} ${getNameFn()}`);
+// }
+
+// greet(getName, 'hello');
+// //hello vishnu 
+
+
+// one liner:
+
+const greet = (getNameFn, greeting) => 
+  console.log(`${greeting} ${getNameFn()}`);
+
+greet(getName ,'hello');
+// //hello vishnu 
+
 
 
 
