@@ -71,6 +71,28 @@ greet(getName ,'hello');
 
 
 
+/*
+define a function called makeAdder that takes in
+1 parameter:
+number -any valid number
+makeAdder should return a function that takes in 
+1 parameter: 
+other_number - any valid number
+the returned function should return the sum of the 
+two numbers
+*/
+
+function makeAdder(number) {
+    return function(other_number) {
+    console.log(number + other_number); 
+    }
+}
+// firstNumber = makeAdder(2);
+// firstNumber(5);
+
+makeAdder(2)(5);
+
+
 
 
 
