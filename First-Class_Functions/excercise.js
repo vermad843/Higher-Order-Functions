@@ -90,14 +90,36 @@ two numbers
 // firstNumber = makeAdder(2);
 // firstNumber(5);
 
+// function makeAdder(number) {
+//  return (other_number) => {
+//      console.log(number + other_number);
+//   }
+// } 
+
+
+// makeAdder(2)(5);
+
 function makeAdder(number) {
- return (other_number) => {
-     console.log(number + other_number);
-  }
-} 
+    return(other_number) => {
+        return number + other_number;
+    };
+}
 
 
-makeAdder(2)(5);
+/*
+use your makeAdder function to create a function 
+that adds 10 to a number 
+invoke your function several times with different 
+numbers,log the result
+*/
+
+const tenAdder = makeAdder(10);
+
+console.log(tenAdder(2));//12
+console.log(tenAdder(5));//15
+
+
+
 
 
 
