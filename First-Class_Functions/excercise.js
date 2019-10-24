@@ -15,8 +15,25 @@
 // }
 // getName();
 
-let getName = () => {
-    console.log("vishnu");
-}
+// let getName = () => {
+//     console.log("vishnu");
+// }
 
-getName();
+// getName();
+
+// let getName = () =>  {
+//     return 'vishnu';
+// }
+// console.log(getName());
+
+//one liner
+
+let getName = () =>   'vishnu';
+
+console.log(getName());
+
+
+
+
+
+
