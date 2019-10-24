@@ -99,11 +99,15 @@ two numbers
 
 // makeAdder(2)(5);
 
-function makeAdder(number) {
-    return(other_number) => {
-        return number + other_number;
-    };
-}
+// function makeAdder(number) {
+//     return(other_number) => {
+//         return number + other_number;
+//     };
+// }
+
+
+const makeAdder = (number) => (other_number) => 
+        other_number + number ;
 
 
 /*
