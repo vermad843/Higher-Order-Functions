@@ -55,9 +55,15 @@ let copiedThings = [];
 
 // forEach
 
-things.forEach((thing) => {
-    copiedThings.push(thing);
-})
+// things.forEach((thing) => {
+//     copiedThings.push(thing);
+// })
+
+
+// one liner:
+things.forEach(thing =>copiedThings.push(thing));
+
+
 
 console.log(copiedThings);
 
