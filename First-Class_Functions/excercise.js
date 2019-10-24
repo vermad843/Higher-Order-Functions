@@ -82,13 +82,20 @@ the returned function should return the sum of the
 two numbers
 */
 
-function makeAdder(number) {
-    return function(other_number) {
-    console.log(number + other_number); 
-    }
-}
+// function makeAdder(number) {
+//     return function(other_number) {
+//     console.log(number + other_number); 
+//     }
+// }
 // firstNumber = makeAdder(2);
 // firstNumber(5);
+
+function makeAdder(number) {
+ return (other_number) => {
+     console.log(number + other_number);
+  }
+} 
+
 
 makeAdder(2)(5);
 
