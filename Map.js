@@ -78,3 +78,30 @@ const fullName = people.map((person) => {
 console.log(fullName);
 
 // [ 'Vishnu Verma', 'Logan Verma', 'Jane Verma', 'XYZ Verma' ]
+
+
+
+const animals = [{
+   'name' : 'cat',
+   'size' : 'small'
+}, {
+   'name' : 'dog',
+   'size' : 'small'
+}, {
+   'name' : 'lion',
+   'size' : 'medium'
+}, {
+   'name' : 'elephant',
+   'size' : 'big'
+}];
+
+// create a new array with just the names of the 
+// animals
+
+
+animalNames = animals.map((animal) => {
+    return animal.name;
+})
+
+console.log(animalNames);
+// [ 'cat', 'dog', 'lion', 'elephant' ]
