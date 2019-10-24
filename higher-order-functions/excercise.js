@@ -68,6 +68,13 @@ for (let i = 0; i < numbers1.length; i++) {
     console.log('The number', numbers1[i], 'is at index', i);
 }
 
-numbers1.forEach((number1,i) => {
-    console.log(`The number ${number1} is at index ${i} `)
-})
+// numbers1.forEach((number1,i) => {
+//     console.log(`The number ${number1} is at index ${i} `)
+// })
+
+numbers1.forEach((number1, i )=> console.log(`The number ${number1} is at index ${i} `));
+
+// The number 2 is at index 0
+// The number 4 is at index 1
+// The number 6 is at index 2
+// The number 8 is at index 3
