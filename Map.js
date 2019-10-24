@@ -119,3 +119,24 @@ const valueAndIndex = theNumbers.map(( value,index) => {
 });
 
 console.log(valueAndIndex);
+
+
+
+//
+const starter = [2, 5, 10];
+// create a new array with each value multiplied by
+// the next value
+// the last value should be multiplied by the first value
+// e.g. [2*5, 5*10, 10*2] == [10, 50, 20]
+
+const multipliedByNext = starter.map((number,index,array) => {
+   let nextIndex = index + 1;
+   if(index == array.length -1){
+      nextIndex = 0;
+   }
+   return number * array[nextIndex];
+}) 
+
+console.log(multipliedByNext);
+
+// [ 10, 50, 20 ]
