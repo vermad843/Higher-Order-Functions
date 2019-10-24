@@ -104,3 +104,39 @@ console.log(evenNumbers);
 evenNumbers.forEach(number => number * 2 );
 console.log(evenNumbers);
 
+
+
+// 
+
+// log the name of each product to the page with
+// a forEach call on the products array
+
+
+let products = [{
+   name : 'Running shoes',
+   price : 75
+}, {
+   name : 'Golf shoes',
+   price : 85
+}, {
+   name : 'Dress shoes',
+   price : 95
+}, {
+   name : 'Sandals',
+   price : 55
+}, {
+   name : 'Walking shoes',
+   price : 65
+}];
+
+
+products.forEach((product) => {
+    console.log(`${product.name}`);
+})
+
+
+// Running shoes
+// Golf shoes
+// Dress shoes
+// Sandals
+// Walking shoes
