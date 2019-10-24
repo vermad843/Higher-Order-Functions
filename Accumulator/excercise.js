@@ -29,8 +29,10 @@ let sum = 0; //Initialize accumulator variable
 
 // forEach 
 
-number_1.forEach((number) => {
-    sum+=number;
-})
+// number_1.forEach((number) => {
+//     sum+=number;
+// })
 
+
+number_1.forEach(number =>sum+=number);
 console.log(sum);//15
