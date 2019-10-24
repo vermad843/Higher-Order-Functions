@@ -119,7 +119,10 @@ console.log(tenAdder(2));//12
 console.log(tenAdder(5));//15
 
 
+const fiveAdder = makeAdder(5);
 
+console.log(fiveAdder(2));//7
+console.log(fiveAdder(5)); //10
 
 
 
