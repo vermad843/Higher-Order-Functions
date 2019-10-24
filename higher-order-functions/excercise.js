@@ -58,3 +58,16 @@ flavors.forEach(flavor => console.log(`I like ${flavor} cake`));
 // I like coffee cake
 // I like walnut cake
 // I like banana cake
+
+
+
+// 
+const numbers1 = [2, 4, 6, 8];
+
+for (let i = 0; i < numbers1.length; i++) {
+    console.log('The number', numbers1[i], 'is at index', i);
+}
+
+numbers1.forEach((number1,i) => {
+    console.log(`The number ${number1} is at index ${i} `)
+})
