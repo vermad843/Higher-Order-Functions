@@ -46,10 +46,12 @@ for (let i = 0; i <flavors.length; i++) {
 }
 
 
-flavors.forEach((flavor, i) => {
-console.log(`I like ${flavor} cake`) 
-})
+// flavors.forEach((flavor, i) => {
+// console.log(`I like ${flavor} cake`) 
+// })
 
+
+flavors.forEach(flavor => console.log(`I like ${flavor} cake`));
 // I like chocolate cake
 // I like ginger cake
 // I like carrot cake
