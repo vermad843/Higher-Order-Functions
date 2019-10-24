@@ -33,6 +33,28 @@ let getName = () =>   'vishnu';
 console.log(getName());
 
 
+// 
+/*
+define a function called greet that takes in 2 params:
+getNameFn - a function that returns your name
+greeting - a string greeting, e.g. 'Hello,Goodbye,etc.
+the function should log `some greeting,your-name-here`
+by invoking the getNameFn
+invoke your function several times with different 
+greetings
+*/
+// getName is a function you mentioned above:
+
+function greet(getNameFn,greeting) {
+  console.log(greeting,getNameFn());
+}
+
+greet(getName,'Hello');
+//hello vishnu 
+
+
+
+
 
 
 
