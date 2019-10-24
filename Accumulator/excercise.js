@@ -67,3 +67,25 @@ things.forEach(thing =>copiedThings.push(thing));
 
 console.log(copiedThings);
 
+
+// 
+
+numbers_2 = [1, 2, 3, 4, 5];
+let doublednumbers = [];
+
+// for (let i = 0; i < numbers_2.length; i++) {
+//     const number = numbers_2[i];
+//     doublednumbers.push(number * 2);
+// }
+
+
+
+// forEach
+
+numbers_2.forEach((number) => {
+     number * 2;
+    doublednumbers.push(number * 2);
+})
+
+console.log(doublednumbers);
+
