@@ -36,3 +36,28 @@ let sum = 0; //Initialize accumulator variable
 
 number_1.forEach(number =>sum+=number);
 console.log(sum);//15
+
+
+// Re-write the for loop with a forEach
+
+let things = ['shoe',
+              'table',
+              'book',
+              'computer',
+              'phone'];
+let copiedThings = [];
+
+// for (let i = 0; i < things.length; i++) {
+//     const thing = things[i];
+//     copiedThings.push(thing);
+// }
+
+
+// forEach
+
+things.forEach((thing) => {
+    copiedThings.push(thing);
+})
+
+console.log(copiedThings);
+
