@@ -92,3 +92,25 @@ numbers_2.forEach(number => doublednumbers.push(number * 2));
 
 console.log(doublednumbers);
 
+
+
+//
+
+let all_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let evenNumbers = [];
+
+// for (let i = 0; i < all_numbers.length; i++) {
+//     const number = all_numbers[i];
+//     if(number % 2 === 0) {
+//         evenNumbers.push(number);
+//     }
+// }
+
+all_numbers.forEach((number) => {
+    if(number % 2 === 0) {
+        evenNumbers.push(number);
+    } 
+})
+
+console.log(evenNumbers);
+
