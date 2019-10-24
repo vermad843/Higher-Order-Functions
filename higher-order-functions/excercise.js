@@ -93,10 +93,14 @@ console.log(evenNumbers);
 
 // forEach
 
-evenNumbers.forEach((number) => {
-    return number * 2;
-})
+// evenNumbers.forEach((number) => {
+//     return number * 2;
+// })
 
+// console.log(evenNumbers);
+
+// one liner :
+
+evenNumbers.forEach(number => number * 2 );
 console.log(evenNumbers);
-
 
