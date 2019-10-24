@@ -21,9 +21,16 @@ let number_1 = [1, 2, 3, 4, 5];
 let sum = 0; //Initialize accumulator variable
 
 // Iterate over the array
-for (let i = 0; i < number_1.length; i++) {
-    const number = number_1[i];
-    sum+=number;//update the accumulator variable
-}
+// for (let i = 0; i < number_1.length; i++) {
+//     const number = number_1[i];
+//     sum+=number;//update the accumulator variable
+// }
+
+
+// forEach 
+
+number_1.forEach((number) => {
+    sum+=number;
+})
 
 console.log(sum);//15
