@@ -12,6 +12,18 @@ or to build a new array based on existing array.
    value
 2. iterating over an array
 3. updating the accumulator variable on each iteration
-
-
 */
+
+// example : 
+
+
+let number_1 = [1, 2, 3, 4, 5];
+let sum = 0; //Initialize accumulator variable
+
+// Iterate over the array
+for (let i = 0; i < number_1.length; i++) {
+    const number = number_1[i];
+    sum+=number;//update the accumulator variable
+}
+
+console.log(sum);//15
