@@ -69,6 +69,40 @@ const fruitStock = fruits.reduce((fruitStock,fruit) => {//fruitStock is a accumu
 console.log(fruitStock);
 
 
-// hasOwnProperty checks wheather the current property exist in the object or not 
+// hasOwnProperty checks wheather the current property exist in the object or not
 
+
+// 
+
+// create a number that is the average price 
+// of all the prices in the array 
+// hint : you will need to check the index to 
+// determine if you should return the sum or 
+// the average
+
+const prices = [29.76, 41.85, 46.5];
+
+const averagePrice = prices.reduce((averagePrice, price,index, array) => {
+   
+  const newAverage = averagePrice + price / array.length;
+  return newAverage;  
+}, 0);
+
+console.log(averagePrice);
+
+
+
+
+
+
+
+// const days = [
+//   'Sunday',
+//   'Monday',
+//   'Tuesday',
+//   'Wednesday',
+//   'Thursday',
+//   'Friday',
+//   'Saturday'
+// ];
 
