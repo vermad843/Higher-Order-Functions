@@ -119,9 +119,13 @@ const animals = [{
   size : 'elephant'
 }];
 
-const sizeSmall = animals.filter((animal) => {
-    return animal.size == 'small';
-});
+// const sizeSmall = animals.filter((animal) => {
+//     return animal.size == 'small';
+// });
+
+// one liner :
+
+const sizeSmall = animals.filter(animal => animal.size == 'small');
 
 console.log(sizeSmall)
 
