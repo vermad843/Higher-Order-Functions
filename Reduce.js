@@ -123,3 +123,24 @@ const shorten = days.reduce((shorten, day) => {
 
 console.log(shorten);
 
+
+// 
+// create a new array with only the words with a 
+// length longer than 6 
+
+const words = ['spray',
+               'limit',
+               'elite',
+               'exuberant',
+               'destruction',
+               'present'];
+
+const moreThanSix = words.reduce((six,word) => {
+  if(word.length > 6) {
+    six.push(word);
+  }
+  return six;
+}, []);
+
+console.log(moreThanSix);
+
