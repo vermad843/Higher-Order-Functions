@@ -134,11 +134,18 @@ console.log(fiveAdder(2));//7
 
 // 
 
-const grow = () => {
-  console.log('Flower');
-};
+// const grow = () => {
+//   console.log('Flower');
+// };
+
+// one liner : 
+
+
+const grow = () =>  console.log('Flower');
 
 grow();
+
+// Flower: 
 
 
 
