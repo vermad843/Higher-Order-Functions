@@ -156,23 +156,29 @@ const people = [{
    first_name : 'Vishnu',
    last_name : 'Verma'
 }, {
-  id : 1,
+  id : 2,
   first_name : 'Logan',
   last_name : 'Verma'
 }, {
-  id : 1,
+  id : 3,
   first_name : 'Deepak',
   last_name : 'Verma'
 }, {
-  id : 1,
+  id :  4,
   first_name : 'Dk',
   last_name : 'Verma'
 }];
 
 
 const peopleById = people.reduce((byId, person) => {
- byId[person.id] = person;                 //creating a i
+ byId[person.id] = person;                
   return byId;
 }, {});
 
 console.log(peopleById);
+
+
+// { '1': { id: 1, first_name: 'Vishnu', last_name: 'Verma' },
+//   '2': { id: 2, first_name: 'Logan', last_name: 'Verma' },
+//   '3': { id: 3, first_name: 'Deepak', last_name: 'Verma' },
+//   '4': { id: 4, first_name: 'Dk', last_name: 'Verma' } }
