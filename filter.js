@@ -61,8 +61,14 @@ const days = [
 // });
 
 
-dayStartWithT = days.filter((day) => {
-    return day.charAt(0) == 'T';
-  });
+// dayStartWithT = days.filter((day) => {
+//     return day.charAt(0) == 'T';
+//   });
+
+
+// one liner :
+
+dayStartWithT = days.filter(day =>  day.charAt(0) == 'T' );
+
 
 console.log(dayStartWithT);
