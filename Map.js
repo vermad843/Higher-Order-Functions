@@ -196,3 +196,15 @@ console.log(coreGeneres);
 //   'crab core',
 //   'noodle core',
 //   'jazz core' ]
+
+
+
+// 
+const betterNumbers = [2, 13, 42];
+// const squaredNumber = betterNumbers.map((number) => {
+const squaredNumber = betterNumbers.map(number => Math.pow(number,5));
+
+    return number**5; 
+});
+
+console.log(squaredNumber);
