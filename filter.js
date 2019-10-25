@@ -56,8 +56,13 @@ const days = [
 // create a new array with only the days start with
 // the letter T 
 
-daysStartWithT = days.filter((day) => {
-  return day[0] == 'T';
-});
+// daysStartWithT = days.filter((day) => {
+//   return day[0] == 'T';
+// });
 
-console.log(daysStartWithT);
+
+dayStartWithT = days.filter((day) => {
+    return day.charAt(0) == 'T';
+  });
+
+console.log(dayStartWithT);
