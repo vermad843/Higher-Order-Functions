@@ -154,3 +154,19 @@ const lengthLongerThanSix = words.filter(word =>  word.length > 6 );
 console.log(lengthLongerThanSix);
 
 // [ 'exuberant', 'destruction', 'present' ]
+
+
+const generes = ['jazz', 
+                 'metal-core',
+                 'punk',
+                 'ska-core',
+                 'vaporwave',
+                 'country-core'];
+
+const endWithCore = generes.filter((gener) => {
+  return gener.includes('-core');
+});
+
+console.log(endWithCore);
+
+// [ 'metal-core', 'ska-core', 'country-core' ]
