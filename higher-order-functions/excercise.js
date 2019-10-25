@@ -145,3 +145,19 @@ products.forEach(product =>   console.log(`${product.name}`));
 // Dress shoes
 // Sandals
 // Walking shoes
+
+
+
+const names = ['Vishnu',
+               'logan',
+               'deepak',
+               'yeppi'];
+
+names.forEach(name => {
+    console.log(name);
+})
+
+// Vishnu
+// logan
+// deepak
+// yeppi
