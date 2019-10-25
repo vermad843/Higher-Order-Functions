@@ -109,6 +109,9 @@ two numbers
 const makeAdder = (number) => (other_number) => 
         other_number + number ;
 
+console.log(makeAdder(2)(5));
+
+
 
 /*
 use your makeAdder function to create a function 
@@ -126,9 +129,16 @@ console.log(tenAdder(5));//15
 const fiveAdder = makeAdder(5);
 
 console.log(fiveAdder(2));//7
-console.log(fiveAdder(5)); //10
 
 
+
+// 
+
+const grow = () => {
+  console.log('Flower');
+};
+
+grow();
 
 
 
