@@ -130,3 +130,23 @@ const sizeSmall = animals.filter(animal => animal.size == 'small');
 console.log(sizeSmall)
 
 
+
+// 
+// create a new array with only the words with a 
+// length longer than 6 
+
+
+const words = ['spray',
+               'limit',
+               'elite',
+               'exuberant',
+               'destruction',
+               'present'];
+
+const lengthLongerThanSix = words.filter((word) => {
+  return word.length > 6
+});
+
+console.log(lengthLongerThanSix);
+
+
