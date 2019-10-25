@@ -18,9 +18,9 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8 ,9, 10];
 
 // filter()
 
-// let evenNumbers = numbers.filter((number) => {
-//     return number % 2 == 0;
-// })
+let evenNumbers = numbers.filter((number) => {
+    return number % 2 == 0;
+})
 
 
 // let evenNumbers = numbers.filter((number) => {
@@ -31,10 +31,33 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8 ,9, 10];
 //     }
 // });
 
-const isEven = (number) => {
-    return number % 2 == 0;
-};
+// const isEven = (number) => {
+//     return number % 2 == 0;
+// };
 
-let evenNumbers = numbers.filter(isEven);
+// let evenNumbers = numbers.filter(isEven);
 
 console.log(evenNumbers);
+
+
+
+// 
+
+const days = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+];
+
+// create a new array with only the days start with
+// the letter T 
+
+daysStartWithT = days.filter((day) => {
+  return day[0] == 'T';
+});
+
+console.log(daysStartWithT);
