@@ -166,9 +166,12 @@ const generes = ['jazz',
 // const endWithCore = generes.filter((gener) => {
 //   return gener.includes('-core');
 // });
-const endWithCore = generes.filter(gener => gener.includes('-core'));
+// const endWithCore = generes.filter(gener => gener.includes('-core'));
+
+const endWithCore = generes.filter(gener => gener.indexOf('core') != -1)
+
 
 
 console.log(endWithCore);
 
-// [ 'metal-core', 'ska-core', 'country-core' ]
+// [ 'metal-core', 'ska-core', 'country-core' ] 
