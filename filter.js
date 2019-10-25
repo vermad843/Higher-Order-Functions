@@ -72,3 +72,28 @@ dayStartWithT = days.filter(day =>  day.charAt(0) == 'T' );
 
 
 console.log(dayStartWithT);
+
+
+// 
+// create a new array with only the people who's
+// first name is less then and equal to 4 characters:
+
+const people = [{
+    first_name: 'CJ',
+    last_name : 'R.'
+}, {
+    first_name: 'Brendan',
+    last_name : 'Eich' 
+}, {
+    first_name: 'Kyle',
+    last_name : 'Simpson'
+}, {
+    first_name: 'Douglas',
+    last_name : 'Crockford'
+}];
+
+const nameLessThanFourLetters = people.filter((person) => {
+   return person.first_name.length <= 4
+}) ;
+
+console.log(nameLessThanFourLetters)
