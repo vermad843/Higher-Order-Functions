@@ -163,9 +163,11 @@ const generes = ['jazz',
                  'vaporwave',
                  'country-core'];
 
-const endWithCore = generes.filter((gener) => {
-  return gener.includes('-core');
-});
+// const endWithCore = generes.filter((gener) => {
+//   return gener.includes('-core');
+// });
+const endWithCore = generes.filter(gener => gener.includes('-core'));
+
 
 console.log(endWithCore);
 
