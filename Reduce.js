@@ -182,3 +182,43 @@ console.log(peopleById);
 //   '2': { id: 2, first_name: 'Logan', last_name: 'Verma' },
 //   '3': { id: 3, first_name: 'Deepak', last_name: 'Verma' },
 //   '4': { id: 4, first_name: 'Dk', last_name: 'Verma' } }
+
+
+
+
+// 
+// create an object where the keys are the size
+// and the size and the values are an array of all 
+// animals that size
+
+const animals = [{
+  name : 'cat',
+  size : 'small'
+}, {
+  name : 'dog',
+  size : 'small'
+}, {
+  name : 'lion',
+  size : 'medium'
+}, {
+  name : 'elephant',
+  size : 'big'
+}];
+
+
+const animalsBySize = animals.reduce((bySize,animal) => {
+   if(!bySize.hasOwnProperty(animal.size)) {
+    bySize[animal.size] = [];
+   } 
+   bySize[animal.size].push(animal);
+  return bySize;
+}, {});
+
+console.log(animalsBySize);
+
+
+// { small:
+//   [ { name: 'cat', size: 'small' },
+//     { name: 'dog', size: 'small' } ],
+//  medium: [ { name: 'lion', size: 'medium' } ],
+// //  big: [ { name: 'elephant', size: 'big' } ] }
