@@ -103,15 +103,23 @@ console.log(sum1 / prices.length);
 
 
 
+//create a new array with the first 3 letters of each day
 
+const days = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday'
+];
 
-// const days = [
-//   'Sunday',
-//   'Monday',
-//   'Tuesday',
-//   'Wednesday',
-//   'Thursday',
-//   'Friday',
-//   'Saturday'
-// ];
+const shorten = days.reduce((shorten, day) => {
+  const short  = day.substring(0,3);  
+  shorten.push(short);
+  return shorten
+}, []);
+
+console.log(shorten);
 
