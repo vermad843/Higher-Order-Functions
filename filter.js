@@ -100,3 +100,29 @@ const nameLessThanFourLetters = people.filter(person =>person.first_name.length 
 
 console.log(nameLessThanFourLetters);
 
+
+// 
+// create a new array with only the animals of 
+// size small : 
+
+const animals = [{
+  name : 'cat',
+  size : 'small'
+}, {
+  name : 'dog',
+  size : 'small' 
+}, {
+  name : 'lion',
+  size : 'medium'
+}, {
+  name : 'cat',
+  size : 'elephant'
+}];
+
+const sizeSmall = animals.filter((animal) => {
+    return animal.size == 'small';
+});
+
+console.log(sizeSmall)
+
+
