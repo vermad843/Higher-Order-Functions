@@ -164,8 +164,11 @@ console.log(cookedFoods)
 
 const coolNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const multipliedBy5 = coolNumbers.map((number) => {
-   return number  * 5 ;
-});
+// const multipliedBy5 = coolNumbers.map((number) => {
+//    return number  * 5 ;
+// });
+
+const multipliedBy5 = coolNumbers.map(number => number * 5);
+
 
 console.log(multipliedBy5);
