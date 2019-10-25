@@ -92,8 +92,11 @@ const people = [{
     last_name : 'Crockford'
 }];
 
-const nameLessThanFourLetters = people.filter((person) => {
-   return person.first_name.length <= 4
-}) ;
+// const nameLessThanFourLetters = people.filter((person) => {
+//    return person.first_name.length <= 4
+// }) ;
 
-console.log(nameLessThanFourLetters)
+const nameLessThanFourLetters = people.filter(person =>person.first_name.length <= 4);
+
+console.log(nameLessThanFourLetters);
+
