@@ -153,9 +153,14 @@ const names = ['Vishnu',
                'deepak',
                'yeppi'];
 
-names.forEach(name => {
-    console.log(name);
-})
+// names.forEach(name => {
+//     console.log(name);
+// })
+
+//one liner : 
+
+names.forEach(name => console.log(name));//
+
 
 // Vishnu
 // logan
