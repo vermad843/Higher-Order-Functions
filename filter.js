@@ -143,10 +143,14 @@ const words = ['spray',
                'destruction',
                'present'];
 
-const lengthLongerThanSix = words.filter((word) => {
-  return word.length > 6
-});
+// const lengthLongerThanSix = words.filter((word) => {
+//   return word.length > 6
+// });
+
+const lengthLongerThanSix = words.filter(word =>  word.length > 6 );
+
+
 
 console.log(lengthLongerThanSix);
 
-
+// [ 'exuberant', 'destruction', 'present' ]
