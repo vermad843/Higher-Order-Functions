@@ -112,5 +112,6 @@ all_numbers.forEach((number) => {
     } 
 })
 
+          
 console.log(evenNumbers);
 
