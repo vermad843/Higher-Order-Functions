@@ -30,6 +30,7 @@ let sum = numbers.reduce((sum, number) => { //Accumulator as a parameter(1)
 }, 0);    //Initialize Accumulator == 0(2)
 
 console.log(sum);
+// 15
 
 // see Above 
 
@@ -39,6 +40,35 @@ console.log(sum);
 // update the accumulator variable
 
 
+// 
+// create an object with the fruit as a key and the 
+// number of occurences of that fruit as a 
+// variable
 
+const fruits = ['banana',
+                'cherry',
+                'orange',
+                'apple',
+                'cherry',
+                'orange',
+                'apple',
+                'banana',
+                'cherry',
+                'orange',
+                'fig'];
+
+const fruitStock = fruits.reduce((fruitStock,fruit) => {//fruitStock is a accumulator 
+    if(fruitStock.hasOwnProperty(fruit)) {   //updating the Accumulator
+     fruitStock[fruit]++;
+    }else {                       //if it does not already have a property called fruit then do this  
+     fruitStock[fruit] = 1;
+    }
+    return fruitStock;                //return Accumulator                            
+}, {}); //initialize the accumulator as an empty object
+
+console.log(fruitStock);
+
+
+// hasOwnProperty checks wheather the current property exist in the object or not 
 
 
