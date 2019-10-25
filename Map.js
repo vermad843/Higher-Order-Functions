@@ -172,3 +172,25 @@ const multipliedBy5 = coolNumbers.map(number => number * 5);
 
 
 console.log(multipliedBy5);
+// [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+
+
+
+// 
+const genres = ['classical',
+                'alternative',
+                'crab',
+                 'noodle',
+                 'jazz'];
+
+coreGeneres = genres.map((gener) => {
+    return `${gener} core`;
+});
+
+console.log(coreGeneres);
+
+// [ 'classical core',
+//   'alternative core',
+//   'crab core',
+//   'noodle core',
+//   'jazz core' ]
