@@ -144,3 +144,35 @@ const moreThanSix = words.reduce((six,word) => {
 
 console.log(moreThanSix);
 
+
+
+// 
+// create an object where the keys are the id
+// and the values are the people 
+// {1 :{people},2 :{people},3 :{people},4 :{people}}
+
+const people = [{
+   id : 1,
+   first_name : 'Vishnu',
+   last_name : 'Verma'
+}, {
+  id : 1,
+  first_name : 'Logan',
+  last_name : 'Verma'
+}, {
+  id : 1,
+  first_name : 'Deepak',
+  last_name : 'Verma'
+}, {
+  id : 1,
+  first_name : 'Dk',
+  last_name : 'Verma'
+}];
+
+
+const peopleById = people.reduce((byId, person) => {
+ byId[person.id] = person;                 //creating a i
+  return byId;
+}, {});
+
+console.log(peopleById);
