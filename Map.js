@@ -183,9 +183,11 @@ const genres = ['classical',
                  'noodle',
                  'jazz'];
 
-coreGeneres = genres.map((gener) => {
-    return `${gener} core`;
-});
+// coreGeneres = genres.map((gener) => {
+//     return `${gener} core`;
+// });
+
+coreGeneres = genres.map(gener => `${gener} core`)
 
 console.log(coreGeneres);
 
