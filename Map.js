@@ -140,3 +140,21 @@ const multipliedByNext = starter.map((number,index,array) => {
 console.log(multipliedByNext);
 
 // [ 10, 50, 20 ]
+
+
+
+//foods example:
+
+const foods = ['chicken', 'corn'];
+
+const cookedFoods = foods.map((food) => {
+    if(food == 'chicken') {
+        return 'chickenLeg'
+    }else {
+        return 'popCorn'
+    }
+});
+
+console.log(cookedFoods)
+
+// [ 'chickenLeg', 'popCorn' ]
