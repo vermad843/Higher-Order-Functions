@@ -80,16 +80,25 @@ console.log(fruitStock);
 // determine if you should return the sum or 
 // the average
 
+// const prices = [29.76, 41.85, 46.5];
+
+// const averagePrice = prices.reduce((averagePrice, price,index, array) => {
+   
+//   const newAverage = averagePrice + price / array.length;
+//   return newAverage;  
+// }, 0);
+
+// console.log(averagePrice);
+// // 39.370000000000005
+
+
 const prices = [29.76, 41.85, 46.5];
 
-const averagePrice = prices.reduce((averagePrice, price,index, array) => {
-   
-  const newAverage = averagePrice + price / array.length;
-  return newAverage;  
+const sum1 = prices.reduce((sum1, price) => {
+  sum1+=price;
+  return sum1 ;
 }, 0);
-
-console.log(averagePrice);
-
+console.log(sum1 / prices.length);
 
 
 
